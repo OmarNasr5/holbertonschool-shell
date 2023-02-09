@@ -1,9 +1,2 @@
 #!/bin/bash
-file="/tmp/iamafile"
-
-if [ -f $file ]; then
-  type=$(file "$file")
-  echo "The file is a $type"
-else
-  echo "The file does not exist or is not a regular file"
-fi
+file /tmp/iamafile
